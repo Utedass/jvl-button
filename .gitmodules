@@ -1,0 +1,6 @@
+[submodule "hdl_design/jvl-generic-clk-en-divider"]
+	path = hdl_design/jvl-generic-clk-en-divider
+	url = git@github.com:Utedass/jvl-generic-clk-en-divider.git
+[submodule "hdl_design/jvl-generic-counter"]
+	path = hdl_design/jvl-generic-counter
+	url = git@github.com:Utedass/jvl-generic-counter.git

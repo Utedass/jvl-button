@@ -10,10 +10,10 @@
 ##### All variables you need to edit are moved here:
 
 # Main design entity
-PRIMARY_DESIGN = generic_clk_en_divider
+PRIMARY_DESIGN = top
 
 # Add design files to this row (not test benches), expected to reside in hdl_design/ subfolder
-DESIGN_FILES = $(PRIMARY_DESIGN).vhd
+DESIGN_FILES = $(PRIMARY_DESIGN).vhd jvl-generic-clk-en-divider/hdl_design/generic_clk_en_divider.vhd jvl-generic-counter/hdl_design/generic_counter.vhd
 
 # Add all testbench-related file names on this row, expected to reside in testbench/ subfolder
 TEST_BENCHES = $(PRIMARY_DESIGN)_tb.vhd
@@ -78,6 +78,4 @@ clean:
 	$(RM) $(WAVEFILE)
 
 debug:
-	echo $(ANALYZE_ARTIFACT)
-	echo $(WORK_DIR)/$(WORK_LIBRARY)-obj93.cf
 	echo $(DESIGN_FILES_FULL_PATH)
